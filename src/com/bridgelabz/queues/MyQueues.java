@@ -19,5 +19,9 @@ public class MyQueues {
 		}
 		
 	}
-	
+	public int deQueue () {
+		MyQueueNode tempNode = head;
+		head =head.getNext();
+		return tempNode.getData();
+	}
 }
