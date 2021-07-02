@@ -8,6 +8,10 @@ public class StackMain {
 		newStack.push(50);
 		newStack.push(70);
 		newStack.printStack();
+		int returnData = newStack.peek();
+		System.out.println(returnData);
+		int deleteData = newStack.pop();
+		System.out.println(deleteData);
 	}
 	
 	

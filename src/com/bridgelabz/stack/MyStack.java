@@ -16,5 +16,13 @@ public class MyStack {
 			tempNode =tempNode.next;
 		}
 	}
+	public int peek() {
+		return head.data;
+	}
+	public int pop() {
+		MyStackNode tempNode = head;
+		head =head.next;
+		return tempNode.data;
+	}
 
 }
