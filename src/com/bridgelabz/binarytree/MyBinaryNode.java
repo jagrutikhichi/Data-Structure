@@ -4,6 +4,7 @@ public class MyBinaryNode {
 	int data;
 	public MyBinaryNode left;
 	public MyBinaryNode right;
+	public int key;
 	
 	
 	public MyBinaryNode() {
@@ -12,12 +13,16 @@ public class MyBinaryNode {
 	}
 
 
-	public MyBinaryNode(int data, MyBinaryNode left, MyBinaryNode right) {
+	public MyBinaryNode(int data, MyBinaryNode left, MyBinaryNode right, int key) {
 		super();
 		this.data = data;
 		this.left = left;
 		this.right = right;
+		this.key = key;
 	}
+
+
+	
 	
 
 }

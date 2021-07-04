@@ -29,6 +29,25 @@ public class BinarySearchTree {
 		
 		return root == null ? 0 : 1 + this.getSizeRecursively(root.left) + this.getSizeRecursively(root.right);
 	}
-
 	
+	public int searchKey(int key) {
+		return key = this.search(root,key);
+		
+	}
+	
+	public int search(MyBinaryNode root,int key) {
+		int searchTree = 0;
+		if(root == null || root.data == key) {
+			return root.data;
+		}
+		else if (root.data < key ) {
+			searchTree = search(root.right, key);
+		}
+		else if (root.data > key ) {
+			searchTree = search(root.left, key);
+		}
+		
+		return searchTree;
+	}
+
 }
