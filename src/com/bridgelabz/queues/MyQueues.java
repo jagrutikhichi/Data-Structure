@@ -4,6 +4,7 @@ public class MyQueues {
 
 	MyQueueNode head;
 	MyQueueNode tail;
+	// Add the new node at the end of queue
 	public void enQueue (int data) {
 		MyQueueNode newNode = new MyQueueNode();
 		newNode.setData(data);
@@ -19,6 +20,7 @@ public class MyQueues {
 		}
 		
 	}
+	// Method to remove first interted element
 	public int deQueue () {
 		MyQueueNode tempNode = head;
 		head =head.getNext();
